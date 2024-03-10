@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - by Aditya Gupta</title>
+</head>
+
+<body>
+    <h1>Google Form</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username : </label>
+            <input type="text" id="username" name="username" placeholder="Type here.." autofocus>
+        </div>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <!-- If 2 inputs are having same name, they will accept 1 input only -->
+            <!-- input & label mai jo pehele likhenge, wahi pehele display hoga -->
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe for newsletter</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter your comment :-</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10">This is placeholder...</textarea>
+        </div>
+
+        <div>
+            <select name="fruits" id="">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
