@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            /*
+            This means height is 200 without padding+border
+            height: 200px;
+            */
+            /* This means, box size = 200 which includes box, padding+border */
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box.</div>
+    <div class="box box2">I am a another box.</div>
+    <div>The above boxes has margin collapse...</div>
+    <div><h3>Margin Collapse</h3></div>
+    <img src="marginCollapse.png" alt="Image not found..">
+</body>
+</html>
