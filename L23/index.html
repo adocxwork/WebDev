@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            /* Inline element bna diya... */
+            /* at the same time, padding & margin issues bhi sahi kr diye.. */
+            /* inline mai, padding-margin- top se nahi hota.., width bhi set nahi kr sakte..  */
+            /* to fix this, use inline-block instead just inline */
+            display: inline-block;
+            padding: 45px;
+            width: 300px;
+            margin: 23px;
+        }
+        .box1{
+            /* pura gayab kr dega.. */
+            /* display: none; */
+            /* gayab krega bt space nahi hatega.. */
+            /* visibility: hidden; */
+        }
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box.
+    </div>
+    <div class="box">also a nice box.</div>
+    <span>I am a good</span>
+    <span>boy.</span>
+</body>
+</html>

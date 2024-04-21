@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 5px 5px 0px 0px #4bd8ff;
+            /* box-shadow: 5px 4px 0px 0px #888888; */
+            /* Use chrome inspect option! */
+            border: 2px solid black;
+            padding: 34px;
+        }
+        .text-shadow{
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow: 2px 2px 4px #888888;
+            /* border ander, outline bahar..,  */
+            /* outlines are not the part of box model */
+            outline: 2px solid black;
+            outline-offset: 20px;
+            /* you can not change the width of outline */
+            /* outline follows the radius of border */
+            border: 2px solid green;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box.
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti perspiciatis, consectetur officiis exercitationem quo soluta, fugiat voluptas velit nihil deserunt porro! Numquam voluptatem nostrum velit perferendis repellendus autem officia quaerat eos beatae consectetur.
+    </p>
+</body>
+</html>
