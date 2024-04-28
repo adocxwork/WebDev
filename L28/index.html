@@ -10,11 +10,20 @@
             margin: 0;
             padding: 0;
         }
+        .parent{
+            padding: 43px;
+            margin: 34px;
+            border: 2px solid purple;
+        }
         .box1{
             background-color: aqua;
+            position: absolute;
         }
         .box2{
             background-color: azure;
+            /* position: relative;
+            top: 34px;
+            left: 56px; */
         }
         .box3{
             background-color: antiquewhite;
@@ -32,9 +41,11 @@
     </style>
 </head>
 <body>
-    <div class="box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
 </body>
 </html>
