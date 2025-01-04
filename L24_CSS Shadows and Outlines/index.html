@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 6px 0px 0px #777272;
+        }
+        .text-element { text-shadow: 2px 2px 4px #888888;
+            outline: 2px solid black;
+            outline-offset: 20px;
+            border: 2px solid red;
+            border-radius: 34px;
+            /* outline is not the part of boxmodel
+            you can not change width of outline
+            outline follows the border*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates ex cupiditate maiores ipsa veniam, facilis doloribus quasi eum, illo pariatur nesciunt iste, obcaecati minima possimus adipisci beatae sint eos numquam aperiam accusantium officiis! Animi soluta adipisci architecto. Alias officiis velit voluptate consectetur quae! Tenetur.
+    </p>
+</body>
+</html>

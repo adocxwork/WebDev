@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,80 @@
             margin: 0;
             padding: 0;
         }
+
+        html {
+            font-size: 12px;
+        }
+
         .box {
-            box-sizing: border-box;
-            border: 2px solid black;
             /* width: 1600px; */
             width: 80vw;
             height: 10vh;
-            margin: auto; /*Centre kr dega..*/
+            box-sizing: border-box;
+
+            border: 2px solid black;
+            margin: auto;
+            /*Centre kr dega..*/
             background-color: aquamarine;
         }
+
         .container {
-            box-sizing: border-box;
-            border: 2px solid black;
             /* width: 1600px; */
             width: 80vw;
-            height: 80vh;
+            /* height: 80vh; */
+            min-height: 80vh;
+            box-sizing: border-box;
+
+            border: 2px solid black;
             margin: 23px auto;
+            font-size: 16px;
             background-color: aquamarine;
+        }
+        .container > div {
+            /* Inherit size se multiply */
+            /* font-size: 2em; */
+            
+            /* Root size se multiply */
+            font-size: 2rem;
+
+            /* parent ki 50% */
+            width: 50%;
+            border: 2px solid red;
+        }
+        .container > div > div {
+            width: 50%;
+            border: 2px solid blue;
+        }
+        .mycont {
+            /* width: 80vmin; */
+            width: 80vw;
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid black;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         This is a box.
     </div>
     <div class="container">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad veniam reprehenderit, minus provident voluptatem, qui corporis aliquid excepturi distinctio animi eligendi dolor harum, pariatur numquam magnam velit? Saepe minima similique, vero mollitia assumenda non architecto ducimus cumque molestias in quidem dolor accusantium reprehenderit dolorum velit.
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad veniam reprehenderit, minus provident
+            voluptatem, qui corporis aliquid excepturi distinctio animi eligendi dolor harum, pariatur numquam magnam
+            velit? Saepe minima similique, vero mollitia assumenda non architecto ducimus cumque molestias in quidem
+            dolor accusantium reprehenderit dolorum velit.
+            <div>
+                This is a Span.......
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container.
     </div>
 </body>
+
 </html>
