@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* root mai, iss tarah declare krte hai variables */
+        :root {
+            /* Global variable */
+            --color: blue;
+            --seccolor: rgb(157, 157, 240);
+            --defpad: 23px;
+            --defop: 0.7;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            background-color: var(--color);
+        }
+        ul {
+            display: flex;
+        }
+        ul li {
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(var(--seccolor))
+        }
+        ul li:first-child {
+            /* local variable */
+            --color:rgb(240, 177, 61);
+            background-color: var(--color, blue);
+        }
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem maiores, nobis minima consequatur possimus maxime culpa beatae rem, libero quos perferendis ab dolores veniam illo repudiandae quod, excepturi quas praesentium accusantium minus iste molestias sit quae! Voluptas atque nobis vitae minus dicta cumque repudiandae. Eius?
+    </div>
+</body>
+</html>

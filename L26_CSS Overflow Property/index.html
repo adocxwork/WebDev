@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OverFlow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+
+            /* agar overflow krega toh scrollbar aayega.. */
+            /* overflow: auto;
+
+            overflow-x: hidden;
+            overflow-y: scroll; */
+
+            overflow: scroll hidden;
+
+            /* scrollbar will be there.. */
+            /* overflow: scroll; */
+
+            /* new line nhi aayega.. */
+            white-space: nowrap;
+
+            /* ... aa jayega */
+            /* text-overflow: ellipsis; */
+
+            /* scrolling disable kr dega.. */
+            /* overflow: clip; */
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iste iure corporis deleniti quisquam obcaecati, commodi facilis perferendis eaque, illum illo cupiditate! Facere!
+    </div>
 </body>
 </html>

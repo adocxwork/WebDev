@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        }
+        .box::first-line {
+            color: yellow;
+        } */
+
+        /* Boxes k ander saare elements ko select krna ho... */
+        /* .boxes * {
+            color: blue;
+            border: 2px solid black;
+        } */
+
+        /* grouping.. */
+        /* p, a, .box, [data-color=primary] {
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even) { */
+        /* .box:nth-child(odd) {
+            background-color: blue;
+        }
+
+        .box:nth-last-child(2) {
+            background-color: red;
+        } */
+
+        /* CSS k through, element ko dynamically insert kiya jaa sakta hai.. */
+        .boxes::before {
+            content: "Aditya is good.";
+            color: red;
+        }
+        .boxes::after {
+            content: "Everyone is not good.";
+            color: red;
+        }
+
+        /* select krne pr... */
+        ::selection {
+            color: aqua;
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am first box.</div>
+        <div class="box">Hey, I am a box.</div>
+        <div class="box">Hey, I am a box.</div>
+
+        <input type="text" placeholder="Type your name here...">
+    </div>
+</body>
+</html>

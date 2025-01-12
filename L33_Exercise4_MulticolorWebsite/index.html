@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --col : rgb(211, 207, 241);
+            --tCol : rgb(57, 59, 65);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            display: flex;
+            background-color: var(--col);
+            color: var(--tCol);
+            border-radius: 20px;
+        }
+        ul  :hover {
+            background-color: antiquewhite;
+            transition: 400ms;
+        }
+        nav ul li {
+            display: flex;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+</body>
+</html>

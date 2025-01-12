@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 80vh;
+            display: flex;
+            
+            /*horizontally center*/
+            justify-content: center;
+            /* justify-content: flex-end; */
+            /* justify-content:flex-start; */
+            /* justify-content:space-between; */
+            /* justify-content:space-around; */
+            /* justify-content:space-evenly; */
+            /* there is no justify-items in CSS */
+
+            /* vertically center */
+            /* (for single line.., multiple lines pr spacing rahega..) */
+            align-items: center;
+            /* align-items:flex-end; */
+            /* align-items:flex-start; */
+            /* align-items:baseline; */
+
+            /* (for multiple lines, multiple lines pr spacing nhi rahega..) */
+            /* align self work nhi krega when this is enabled */
+            /* align-content: center; */
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+
+            /* wrap kr dega.. */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            
+            /* flow direction + flex wrap */
+            flex-flow: row wrap;
+
+            /* for multiple lines */
+            /* align-content: center; */
+
+            gap: 30px;
+            row-gap: 10px;
+            column-gap: 5px;
+        }
+        .items {
+            height: 72px;
+            width: 2px;
+            border: 1px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+
+            /* default flex grow is 0 */
+            flex-grow: 1;
+        }
+        .order-1 {
+            /* default order is 0 */
+            order: 1;
+        }
+        .order-2 {
+            order: 2;
+        }
+        .order-3 {
+            order: 3;
+        }
+        .item1 {
+            flex-grow: 12;
+
+            /* ability of an item to shrink when needed, 2 means double speed se shrink hoga */
+            /* flex-shrink: 2; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items order-1">20</div>
+            <div class="items">3</div>
+            <div class="items item1" style="align-self: flex-start;">1023</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">1</div>
+            <div class="items order-3">392</div>
+            <div class="items order-2">39</div>
+            <div class="items">3</div>
+        </div>
+    </main>
+</body>
+</html>

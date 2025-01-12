@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        img {
+            float: right;
+        }
+        .cards {
+            border: 2px solid black;
+            /* Container k ander image aa jayega.. */
+            /* overflow ko khatam kr dega */
+            display: flow-root;
+        }
+        .card {
+            border: 2px solid red;
+        }
+        .card:nth-child(3) {
+            background-color: aqua;
+            /* clear: right; */
+            /* dikh mt jayiyo */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <!-- Image is overflowing (view in browser) -->
+        <img src="pic.jpg" alt="" width="230px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dignissimos quas. Natus est veniam laudantium totam itaque atque, sed a, voluptates mollitia quam ratione provident doloribus iste eum quas esse necessitatibus ullam magnam quia!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem at fuga veniam incidunt accusamus cupiditate cum impedit culpa, quod, explicabo alias dolores, mollitia atque! Facere nostrum facilis in, quia sequi ea unde quae eligendi voluptatum aliquid perspiciatis illo! Impedit debitis esse ab voluptas. Iste quas doloribus odit laborum, accusamus obcaecati nesciunt dolores non dicta aperiam ut, et illo doloremque! Exercitationem asperiores quo eaque excepturi distinctio laudantium blanditiis aut ducimus, maiores quasi, sed perspiciatis. Labore voluptates perspiciatis, quos mollitia facere inventore suscipit exercitationem eligendi recusandae impedit quia quidem nemo asperiores, veniam omnis qui laborum culpa repellendus temporibus illum possimus facilis. Eveniet repellat dignissimos fugit, odit dolore esse iusto commodi earum consequuntur fuga quam reprehenderit placeat, possimus corrupti perspiciatis delectus sequi voluptatibus voluptatem, voluptates libero nisi! Maiores beatae asperiores dolor, cumque ducimus nam autem, in alias labore exercitationem sunt eius, voluptatem aut fugit tempore natus inventore deserunt repellat corporis obcaecati vitae tenetur. Id, a. At impedit praesentium deserunt. Hic alias molestias modi sapiente blanditiis laudantium, doloremque reprehenderit! Molestias esse illum dignissimos dicta nostrum incidunt vel officiis porro dolorem quasi nobis rerum, similique atque cumque saepe? Quam sapiente eveniet dolorum delectus accusamus molestias in, iure ad esse natus facere eligendi possimus! Beatae molestias assumenda libero adipisci maxime deserunt nobis quod! Iusto, eligendi temporibus unde dolore illo consequuntur repellendus iste magnam aliquid ipsam eum ex, laborum repellat est accusamus minus esse maiores? Libero, fugit. At beatae illum commodi quasi debitis dolorem, atque ipsum alias unde est. Alias, porro! Incidunt consequuntur odio veniam quo sunt facilis accusamus quod accusantium? Qui ducimus veniam vel molestiae earum minima? Sunt sapiente placeat ad aperiam nobis, aliquid esse, eius porro ipsum deserunt labore commodi laboriosam facere! Impedit, iure. Molestiae aspernatur commodi perspiciatis, reprehenderit dignissimos sapiente culpa mollitia alias tempora enim consequuntur distinctio expedita voluptatibus laborum quidem, maiores quae obcaecati quisquam ipsam! Voluptas eaque sit fugiat, molestiae soluta distinctio perspiciatis at non, laudantium sunt similique porro velit excepturi ipsa ipsum? Aut, iure tempore obcaecati tenetur quam distinctio neque cumque? Omnis, repellat distinctio?</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
