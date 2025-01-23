@@ -6,43 +6,44 @@
     <title>CSS Grid</title>
     <style>
         .container {
-            width: 80vw;
             border: 2px solid black;
             display: grid;
             grid-template-areas: "nav nav nav"
                                 "side article article"
                                 "footer footer footer";
         }
-        .items {
+        .item {
             border: 2px solid red;
             height: 55px;
         }
-        .item1 {
+        .item-1 {
             grid-area: nav;
             background-color: aqua;
         }
-        .item2 {
+        .item-2 {
             grid-area: side;
             background-color: beige;
         }
-        .item3 {
+        .item-3 {
             grid-area: article;
+            background-color: azure;
         }
-        .item4 {
+        .item-4 {
             grid-area: footer;
         }
-        .item5 {
+        .item-5 {
+            /* overlapping */
             grid-area: nav;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="items item1">1</div>
-        <div class="items item2">2</div>
-        <div class="items item3">3</div>
-        <div class="items item4">4</div>
-        <div class="items item5">5</div>
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
     </div>
 </body>
 </html>

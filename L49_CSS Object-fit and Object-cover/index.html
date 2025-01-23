@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ObjectFit ObjectCover</title>
+    <style>
+        .container {
+            height: 434px;
+            width: 364px;
+            border: 2px solid black;
+            /* background-color: azure; */
+            /* background-position: top right; */
+
+            /* background-position: center center; */
+            /* background-image: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg"); */
+
+            background-image: url("https://ps.w.org/instant-images/assets/icon-256x256.png?rev=2504172");
+            /* background-repeat: repeat-x; */
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        img {
+            /* width: 266px;
+            height: 233px; */
+
+            /* default property */
+            /* object-fit: fill; */
+
+
+            /* upar mentioned dimentions ko cover kr lega image... */
+            object-fit: cover;
+            object-position: top right;
+            object-position: 10px 20px;
+            
+
+            /* fit-in ho jajyega mentioned dimentions mai */
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg" alt=""> -->
+    </div>
+</body>
+</html>
