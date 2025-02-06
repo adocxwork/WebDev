@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+                                                <!-- Custom attribute -->
+        <div class="box" style="display: flex;" data-createdBy="Aditya" data-conceptBy="Gupta ji">Hey, I am a box</div>
+        <div class="box">Hey, I am a box</div>
+    </div>
+
+
+    <script>
+        // // inserting elements
+        // let div = document.createElement("div");
+        // div.innerHTML = "I have been inserted.. <b>by Aditya</b>";
+        // div.setAttribute("class", "created");
+        // // document.querySelector(".container").append(div); //inserts at end
+        // document.querySelector(".container").before(div); //inserts before container
+        // // similarly; after, prepend etc. (see notes)
+
+
+        // inserting HTML
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend", "<b>Insertes HTML</b>") //inserts after container (see notes for more options for inserting(43 page))
+    </script>
+</body>
+</html>
