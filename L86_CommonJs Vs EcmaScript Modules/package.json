@@ -1,0 +1,17 @@
+{
+  "name": "l86_commonjs-vs-ecmascript-modules",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "token": "^0.1.0",
+    "web": "^0.0.2"
+  }
+}
